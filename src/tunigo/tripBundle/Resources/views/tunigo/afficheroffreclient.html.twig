@@ -1,0 +1,18 @@
+<body>
+    
+<center>
+    <h1>Liste des offres </h1>
+    {% for offrex in offre %}
+        <div style="text-align:left ;width:200px; "  >
+    <ul>
+        <li>Destination :{{offrex.destination}}</li>
+        <li>Date Aller :{{offrex.datealler|date('y/m/d')}}</li>
+        <li>Date Retour : {{offrex.dateretour|date('y/m/d')}}</li>
+        <li>Prix :{{offrex.prix}}</li>
+        <li>Companie : {{offrex.companie}}</li>
+        <li><a href="{{path('trip_reservpage',{id:offrex.id})}}">réservez ici</a> </li>
+        </ul>
+        *************************************</div>
+    {% endfor %}  
+</center>
+</body>

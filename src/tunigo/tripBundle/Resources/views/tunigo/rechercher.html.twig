@@ -1,0 +1,36 @@
+ <Form method="POST" action="{{path('trip_recherchepage')}}">
+        rechercher : <INPUT type="text" name="nomprenom" id="nomprenom">
+        <INPUT type="submit" value="valider">
+    </FORM>
+        
+        
+        
+        *******
+           
+ <table border="4" >
+        
+    <tr>
+        <td><center> Nome et prenom </center></td> 
+        <td><center> Destination </center> </td> 
+        <td><center>Nombre de places </center></td>  
+
+
+        
+    </tr>   
+        
+    
+    <tr>
+        {% for reservationx in reservation %}
+            <td><center>{{reservationx.nomprenom}}</center></td>
+            <td><center>{{reservationx.offre}}</center></td>
+            <td><center>{{reservationx.nbplaces}}</center></td>
+       
+           
+       
+       
+    </tr>
+ 
+     {% endfor %}   
+</table>
+
+</center>

@@ -1,0 +1,13 @@
+<body>
+<center>
+    <h1>reserver offre </h1>
+    
+   <form method='POST' action="{{path('trip_reservpage',{id:offre.id})}}" >
+       Nom Et Prenom : <INPUT type="text" name="nomprenom" id="nomprenom"><br>
+       email: {{form_widget(form.email)}}<br>
+       Nombre de places : <INPUT type="number" name="nbplaces" id="nbplaces"><br>
+    {{form_rest(form)}}
+    </form>
+</center>  
+    
+</body>

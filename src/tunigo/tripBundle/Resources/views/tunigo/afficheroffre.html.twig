@@ -1,0 +1,34 @@
+<body>
+<center>
+    <h1>Liste des offres </h1>
+    
+ <table border="4" >
+        
+    <tr>
+        <td><center> Destination </center></td> 
+        <td><center> Date Aller </center> </td> 
+        <td><center>Date Retour</center></td>  
+        <td><center> Prix  </center></td> 
+        <td><center> Companie </center></td> 
+
+        
+    </tr>   
+        
+    
+    <tr>
+        {% for offrex in offre %}
+            <td><center>{{offrex.destination}}</center></td>
+    <td><center>{{offrex.datealler|date('y/m/d')}}</center></td>
+            <td><center>{{offrex.dateretour|date('y/m/d')}}</center></td>
+            <td><center>{{offrex.prix}}</center></td>
+            <td><center>{{offrex.companie}}</center></td>
+           
+       
+       
+    </tr>
+ 
+     {% endfor %}   
+</table>
+
+</center>
+</body>

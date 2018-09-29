@@ -1,0 +1,32 @@
+trip_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: tripBundle:Default:index }
+
+
+trip_ajoutpage:
+    path:     /ajouter
+    defaults: { _controller: tripBundle:tunigo:ajout }
+
+
+trip_affpage:
+    path:     /affichage
+    defaults: { _controller: tripBundle:tunigo:afficher }
+
+trip_affcltpage:
+    path:     /affichage/client
+    defaults: { _controller: tripBundle:tunigo:afficherclient }
+    
+    
+    
+trip_reservpage:
+    path:     /reserver/{id}
+    defaults: { _controller: tripBundle:tunigo:reserver }
+    
+    
+trip_recherchepage:
+    path:     /rechercher
+    defaults: { _controller: tripBundle:tunigo:rechercher }
+    
+trip_facturepage:
+    path:     /facture/{id}/{nbplaces}/{nomprenom}
+    defaults: { _controller: tripBundle:tunigo:facture }

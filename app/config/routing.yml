@@ -1,0 +1,4 @@
+trip:
+    resource: "@tripBundle/Resources/config/routing.yml"
+    prefix:   /
+
